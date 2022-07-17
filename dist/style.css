@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:400,700");
+body {
+  background-color: #141519;
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.thankyou-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.thankyou-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.thankyou-card span {
+  background-color: #252e37;
+  color: #ff7614;
+  margin-block: 25px 30px;
+  max-width: 11.875rem;
+  align-self: center;
+}
+
+.card {
+  background-color: #212731;
+  color: white;
+  margin-inline: auto;
+  padding: 1.5rem 1.5rem 1.8rem 1.5rem !important;
+  width: min(100% - 13.4vw, 25.625rem);
+}
+.card-title {
+  margin-block: 20px 10px;
+}
+
+.card-figure {
+  justify-content: flex-start !important;
+}
+.card-figure div {
+  align-self: flex-start;
+  background-color: #252e37;
+  border-radius: 100%;
+  position: relative;
+  width: 40px !important;
+  height: 40px !important;
+}
+.card-figure div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-body {
+  gap: 0 !important;
+  padding: 0 !important;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+}
+
+.card div:last-of-type {
+  width: 100%;
+}
+.card div:last-of-type .btn-wide {
+  background-color: #ff7614;
+  border: none;
+  border-radius: 1.4rem;
+  width: 100%;
+}
+.card div:last-of-type .btn-wide:hover {
+  background-color: white;
+  color: #ff7614;
+}
+
+.rating {
+  justify-content: space-between;
+  margin-block: 15px 10px;
+  width: 100%;
+}
+.rating label {
+  cursor: pointer;
+  display: block;
+  padding: 30px;
+  position: relative;
+  padding-left: 20px;
+}
+.rating label input {
+  display: none;
+}
+.rating label input:hover + span {
+  background-color: #ff7614;
+  border-color: #ff7614;
+}
+.rating label input:selection + span {
+  background-color: #7c8898;
+  border-color: #7c8898;
+}
+.rating label input:checked + span {
+  background-color: #7c8898;
+  border-color: #7c8898;
+}
+.rating label span {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  overflow: hidden;
+  background-color: #252e37;
+  border-radius: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 10pt;
+  left: 0;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.hidden {
+  display: none;
+}
